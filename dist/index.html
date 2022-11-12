@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Nyan^chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="contents">
+    <p class="titlebar" >Nyan^chat</p>
+
+    <section id="posts">
+    </section>
+
+    <section class="buttons">
+      <button id="top-button">↑</button>
+      <button id="bottom-button">↓</button>
+      <button id="post-button">＋</button>
+    </section>
+  </div>
+
+  <div id="post-dialog" class="">
+    <section style="border: 1px solid white;padding: 0.4rem 1rem;width: 80%;height: 90%;">
+      <p style="border-bottom: 1px solid white;padding: 0 0.5rem;">新規投稿</p>
+      
+      <div style="margin-top: 1rem;">
+        <p>名前</p>
+        <input id="post-input-name" type="text" style="background-color: transparent;border: 1px solid gray;cursor: text;width: 100%;">
+      </div>
+
+      <div style="margin-top: 1rem;">
+        <p>内容</p>
+        <textarea id="post-input-content" style="max-height: 100%;"></textarea>
+      </div>
+
+      
+      <div style="margin: 1rem 0;">
+        <button id="post-submit-button" style="padding: 0 0.6rem;">送信</button>
+        <button id="post-cancel-button" style="padding: 0 0.6rem;">キャンセル</button>
+      </div>
+
+    </section>
+  </div>
+
+  <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>
